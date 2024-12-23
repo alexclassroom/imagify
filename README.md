@@ -159,7 +159,7 @@ Please report security bugs found in the site-reviews plugin's source code throu
 - Enhancement: Deactivate by default calculation of the media elements used for the filters in the Media Library view.
 - Enhancement: Remove unnecessary calls to the API on each page load.
 - Enhancement: Update the UI of the banners, remove the unnecessary step before the checkout.
-- Enhancement: 3rd-party compatibility: Fix a problem when an unstyled banner was displayed on Gravity Forms plugin view.
+- 3rd-party compatibility: Fix a problem when an unstyled banner was displayed on Gravity Forms plugin view.
 
 ### 2.2.3.2
 - Enhancement: Optimize and cache the modal attachment counter database query.
