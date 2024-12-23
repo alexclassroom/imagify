@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace Imagify\Tests\Unit\classes;
 
 use Mockery;
@@ -21,13 +23,17 @@ class Test_PluginActionLinks extends TestCase {
 
         $this->user = Mockery::mock( User::class );
         $this->admin_subscriber = new AdminSubscriber( $this->user );
+
+		$this->stubTranslationFunctions();
+		$this->stubEscapeFunctions();
     }
 
 	/**
 	 * @dataProvider configTestData
 	 */
 	public function testShouldReturnAsExpected( $config, $expected ) {
-        $this->user->plan_id = $config['plan_id'];
+		$this->user->shouldReceive( 'get_plan_id' )
+			->andReturn( $config['plan_id'] );
 
         Functions\when( 'imagify_get_external_url' )->justReturn( 'https://example.org' );
         Functions\when( 'get_imagify_admin_url' )->justReturn( 'https://example.org' );
