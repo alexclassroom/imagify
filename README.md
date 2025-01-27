@@ -156,9 +156,9 @@ Please report security bugs found in the site-reviews plugin's source code throu
 
 ## Changelog
 ### 2.2.5
-- Enhancement: Optimize SQL queries inside the plugin to calculate necessary data faster
-- Enhancement: Improve the design of the banners inside the plugin
-- Enhancement: Correct the upgrade link
+- Enhancement: Optimize SQL queries inside the plugin to calculate necessary data faster.
+- Enhancement: Improve the design of the banners inside the plugin.
+- Enhancement: Correct the upgrade link.
 
 ### 2.2.4
 - Enhancement: Deactivate by default calculation of the media elements used for the filters in the Media Library view.
